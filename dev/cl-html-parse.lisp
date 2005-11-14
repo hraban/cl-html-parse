@@ -51,7 +51,8 @@
         :acl-compat.excl)
   (:export
    #:phtml-internal
-   #:parse-html))
+   #:parse-html)
+  (:nicknames "HTML-PARSE"))
 
 (in-package :net.html.parser)
 
