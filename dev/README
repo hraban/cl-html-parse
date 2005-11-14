@@ -1,1 +1,9 @@
-CL-HTTP-PARSE is a slash and burn port of Franz's phtml HTML parser.I made a few small changes to the source mainly involving the call toexcl:intern* in collect-tag. In particular, all tags are now string-upcasedbefore being interned. There is probably a better solution but I'm not very Allegro savvy.Any questions or concerns should be directed to me, Gary Warrne King atgwking@metabang.com.
+CL-HTTP-PARSE is a slash and burn port of Franz's phtml HTML parser.
+
+I made a few small changes to the source mainly involving the call to
+excl:intern* in collect-tag. In particular, all tags are now string-upcased
+before being interned. There is probably a better solution but I'm not 
+very Allegro savvy.
+
+Any questions or concerns should be directed to me, Gary Warrne King at
+gwking@metabang.com.
