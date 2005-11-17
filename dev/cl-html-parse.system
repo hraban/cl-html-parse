@@ -63,13 +63,13 @@ DISCUSSION
 |#
 (in-package common-lisp-user)
 
-(eksl-define-logical-pathname-translations (cl-html-parse)
+(glu-define-logical-pathname-translations (cl-html-parse)
   (cl-html-parse)
   (source))
 
 ;;; ---------------------------------------------------------------------------
 
-(define-eksl-system cl-html-parse
+(define-glu-system cl-html-parse
   :base-dir "cl-html-parse:source;"
   :bin-identifiers (:platform :vendor)
   :files ("package"
