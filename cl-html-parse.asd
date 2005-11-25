@@ -2,10 +2,6 @@
 
 #| simple-header
 
-$Id: cl-html-parse.asd,v 1.1 2005/08/23 20:49:29 gwking Exp $
-$Author: gwking $
-$Date: 2005/08/23 20:49:29 $
-
 Copyright (c) 2001-2003 Gary Warren King (gwking@cs.umass.edu) 
 
 Permission is hereby granted, free of charge, to any person obtaining a 
@@ -61,8 +57,11 @@ DEALINGS IN THE SOFTWARE.
   :licence "MIT Style license for the packaging, AllegroServe license for the code."
   :description "HTML Parser"
   :long-description "Franz's HTML Parser packaged up separately for ASDF."
-  :components ((:file "package")
-               (:file "if-star" :depends-on ("package"))
-               (:file "cl-html-parse" :depends-on ("package" "if-star"))))
+  :components ((:module "dev"
+                        :components ((:file "package")
+                                     (:file "if-star" 
+                                            :depends-on ("package"))
+                                     (:file "cl-html-parse" 
+                                            :depends-on ("if-star"))))))
 
 
