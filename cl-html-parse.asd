@@ -57,11 +57,16 @@ DEALINGS IN THE SOFTWARE.
   :licence "MIT Style license for the packaging, AllegroServe license for the code."
   :description "HTML Parser"
   :long-description "Franz's HTML Parser packaged up separately for ASDF."
-  :components ((:module "dev"
-                        :components ((:file "package")
+  :components ((:static-file "COPYING")
+               (:module "dev"
+                        :components ((:static-file "README")
+                                     
+                                     (:file "package")
+                                     #-ALLEGRO
                                      (:file "if-star" 
                                             :depends-on ("package"))
                                      (:file "cl-html-parse" 
-                                            :depends-on ("if-star"))))))
+                                            :depends-on ("package" 
+                                                         #-ALLEGRO "if-star"))))))
 
 
