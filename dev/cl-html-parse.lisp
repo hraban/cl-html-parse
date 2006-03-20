@@ -57,7 +57,7 @@
 (in-package :net.html.parser)
 
 (defun current-case-mode ()
-  (or #+Allegro excl:*current-case-mode*
+  (or #+allegro excl:*current-case-mode*
       *print-case*))
 
 (defmacro tag-auto-close (tag) `(get ,tag 'tag-auto-close))
