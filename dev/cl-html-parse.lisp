@@ -43,7 +43,7 @@
 ; do character entity stuff
 ;
 
-(defpackage net.html.parser
+(defpackage #:net.html.parser
   (:use :cl 
         #+MCL :ccl 
         #+Ignore :clos
@@ -52,9 +52,9 @@
   (:export
    #:phtml-internal
    #:parse-html)
-  (:nicknames "HTML-PARSE"))
+  (:nicknames #:html-parse))
 
-(in-package :net.html.parser)
+(in-package #:net.html.parser)
 
 (defun current-case-mode ()
   (or #+allegro excl:*current-case-mode*
