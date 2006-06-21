@@ -62,11 +62,11 @@ DEALINGS IN THE SOFTWARE.
                         :components ((:static-file "README")
                                      
                                      (:file "package")
-                                     #-ALLEGRO
+                                     #-allegro
                                      (:file "if-star" 
                                             :depends-on ("package"))
                                      (:file "cl-html-parse" 
                                             :depends-on ("package" 
-                                                         #-ALLEGRO "if-star"))))))
+                                                         #-allegro "if-star"))))))
 
 
