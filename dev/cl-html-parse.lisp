@@ -1355,8 +1355,9 @@
 		)))	     
 	     
 
-(defmethod parse-html ((str string) &key callback-only callbacks collect-rogue-tags
-					 no-body-tags parse-entities)
+(defmethod parse-html ((str string) &key 
+		       callback-only callbacks collect-rogue-tags
+		       no-body-tags parse-entities)
   (declare (optimize (speed 3) (safety 1)))
   (parse-html (make-string-input-stream str) 
 	      :callback-only callback-only :callbacks callbacks
