@@ -52,7 +52,7 @@
   (:export
    #:phtml-internal
    #:parse-html)
-  (:nicknames #:html-parse))
+  (:nicknames #:html-parse #:cl-html-parse))
 
 (in-package #:net.html.parser)
 
