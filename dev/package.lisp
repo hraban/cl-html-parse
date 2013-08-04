@@ -63,7 +63,7 @@
         #+(or allegro cormanlisp) :excl
         #+mcl :ccl
         )
-  #+lispworks (:import-from :common-lisp #:fixnump)
+  #+lispworks (:import-from :lispworks #:fixnump)
   #+sbcl (:import-from :sb-int #:fixnump)
   #+sbcl (:import-from :sb-ext #:without-package-locks)
   #+cmu (:import-from :ext #:without-package-locks)
