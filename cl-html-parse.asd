@@ -7,13 +7,18 @@
   :licence "MIT Style license for the packaging, AllegroServe license for the code."
   :description "HTML Parser"
   :long-description "Franz's HTML Parser packaged up separately for ASDF."
-  :depends-on (:acl-compat)
   :components
+  #+use-acl-compat  :depends-on   #+use-acl-compat (:acl-compat)
   ((:static-file "COPYING")
-   (:module 
+   (:module
     "dev"
     :components ((:static-file "README")
 		 (:static-file "examples/contacts.html")
-		 (:file "cl-html-parse"))))) 
+
+		 #-use-acl-compat
+		 (:file "package")
+		 #-(or allegro use-acl-compat)
+		 (:file "if-star" :depends-on ("package"))
+		 (:file "cl-html-parse" :depends-on ("package" #-allegro "if-star"))))))
 
 
