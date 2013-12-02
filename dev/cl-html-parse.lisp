@@ -44,11 +44,11 @@
 ;
 
 (defpackage #:net.html.parser
-  (:use :cl 
+  (:use #:cl 
         #+MCL :ccl 
         #+Ignore :clos
         #+Ignore :excl
-        :acl-compat.excl)
+        #:acl-compat-for-cl-html-parse)
   (:export
    #:phtml-internal
    #:parse-html)

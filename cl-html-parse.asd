@@ -15,7 +15,6 @@
     :components ((:static-file "README")
 		 (:static-file "examples/contacts.html")
 
-		 #-use-acl-compat
 		 (:file "package")
 		 #-(or allegro use-acl-compat)
 		 (:file "if-star" :depends-on ("package"))
