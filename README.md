@@ -10,10 +10,6 @@ very Allegro savvy.
 Any questions or concerns should be directed to me, Gary Warren King at
 gwking@metabang.com.
 
-If the feature :use-acl-compat is set, then cl-http-parse will depend on
-it; otherwise, it will use its own package and if* definitions.
-
-
 ### Example #1
 
 (html-parse:parse-html
