@@ -48,7 +48,7 @@
         #+MCL :ccl 
         #+Ignore :clos
         #+Ignore :excl
-        #:acl-compat-for-cl-html-parse)
+        #:if-star-for-cl-html-parse)
   (:export
    #:phtml-internal
    #:parse-html)
