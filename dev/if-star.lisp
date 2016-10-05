@@ -1,4 +1,11 @@
-(in-package #:acl-compat-for-cl-html-parse)
+(defpackage #:if-star-for-cl-html-parse
+  (:use #:common-lisp)
+  (:export #:if*))
+
+(in-package #:if-star-for-cl-html-parse)
+
+;;;; The IF* macro placed in the public domain by John Foderaro. 
+;;;; See: http://www.franz.com/~jkf/ifstar.txt
 
 (defvar if*-keyword-list '("then" "thenret" "else" "elseif"))
 
