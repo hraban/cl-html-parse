@@ -959,7 +959,9 @@
 ;;;;;;;;;;; quick and dirty parse
 
 ; the elements with no body and thus no end tag
-(dolist (opt '(:area :base :basefont :bgsound :br :button :col 
+(dolist (opt '(:area :base :basefont :bgsound :br
+	       ;;:button - buttons can totally have contents
+	       :col 
 	       ;;:colgroup - no, this is an element with contents
 	       :embed :hr :img :frame
 	       :input :isindex :keygen :link :meta 
@@ -968,7 +970,8 @@
 
 (defvar *in-line* '(:tt :i :b :big :small :em :strong :dfn :code :samp :kbd
 		    :var :cite :abbr :acronym :a :img :object :br :map
-		    :q :sub :sup :span :bdo :input :select :textarea :label :button :font))
+		    :q :sub :sup :span :bdo :input :select :textarea :label ;;:button 
+		    :font))
 
 (defvar *ch-format* '(:i :b :tt :big :small :strike :s :u
 		      :em :strong :font))
