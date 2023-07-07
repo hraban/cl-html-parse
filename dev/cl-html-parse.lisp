@@ -1059,7 +1059,7 @@
 		  no-body-tags parse-entities))
 
 (defmacro tag-callback (tag)
-  `(rest (assoc ,tag callbacks)))
+  `(cadr (assoc ,tag callbacks)))
 
 (defun phtml-internal (p read-sequence-func callback-only 
 		       callbacks collect-rogue-tags 
