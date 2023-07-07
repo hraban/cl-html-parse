@@ -1,3 +1,8 @@
+
+## NOTE
+
+This is unmaintained code. Gary King is no longer an active Lisper. Good luck out there. If you'd like to take it over, let me know.
+
 ### Introduction
 
 CL-HTML-PARSE is a slash and burn port of Franz's phtml HTML parser.
